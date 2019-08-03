@@ -72,7 +72,7 @@ public class AdminActivity extends AppCompatActivity {
                 saveDeal();
                 Toast.makeText(this, "Deal Saved", Toast.LENGTH_LONG).show();
                 cleanEditText();
-
+               // backToList();
                 return true;
 
             default:
@@ -97,5 +97,7 @@ public class AdminActivity extends AppCompatActivity {
 
 
 }
+
+
 
 
