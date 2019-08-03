@@ -7,15 +7,13 @@
     tools:context=".AdminActivity">
 
     <EditText
-        android:id="@+id/deal_editText"
+        android:id="@+id/title_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name..."
+        android:hint="Title..."
         android:textStyle="bold"
         android:background="@drawable/input_design"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,37 +22,34 @@
         android:padding="20dp"/>
 
     <EditText
-        android:id="@+id/price_editText2"
+        android:id="@+id/price_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
         android:background="@drawable/input_design"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         android:textStyle="bold"
         android:textColor="@android:color/holo_red_dark"
         android:hint="Price..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deal_editText"
+        app:layout_constraintTop_toBottomOf="@+id/title_editText"
         android:padding="20dp"/>
 
     <EditText
-        android:id="@+id/description_editText3"
+        android:id="@+id/description_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:ems="10"
         android:background="@drawable/input_design"
-        android:inputType="textPersonName"
         android:hint="Description..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price_editText2"
+        app:layout_constraintTop_toBottomOf="@+id/price_editText"
         android:padding="20dp"/>
 
     <Button
@@ -69,7 +64,7 @@
         android:background="@drawable/buttons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description_editText3"
+        app:layout_constraintTop_toBottomOf="@+id/description_editText"
         android:padding="10dp"/>
 
     <ImageView
@@ -78,7 +73,6 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_marginTop="24dp"
-        android:background=""
         android:cropToPadding="false"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
