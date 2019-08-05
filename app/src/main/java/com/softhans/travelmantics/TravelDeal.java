@@ -1,8 +1,37 @@
 package com.softhans.travelmantics;
 
-public class TravelDeal
-{
-    private  String id;
+import java.io.Serializable;
+
+public class TravelDeal implements Serializable {
+    private String id;
+    private String title;
+    private String description;
+    private String price;
+    private String imageUrl;
+    private String imageName;
+
+
+    public String getImageName() {
+        return mImageName;
+    }
+
+    public void setImageName(String imageName) {
+        mImageName = imageName;
+    }
+
+    private String mImageName;
+
+    public TravelDeal() {
+    }
+
+    public TravelDeal(String title, String description,
+                      String price, String imageUrl, String imageName) {
+        this.title = title;
+        this.description = description;
+        this.price = price;
+        this.imageUrl = imageUrl;
+        this.setImageName(imageName);
+    }
 
     public String getId() {
         return id;
@@ -41,22 +70,6 @@ public class TravelDeal
     }
 
     public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    private  String title;
-    private  String description;
-    private  String price;
-    private  String imageUrl;
-
-    public TravelDeal (){}
-
-    public TravelDeal( String title, String description, String price, String imageUrl)
-    {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.price = price;
         this.imageUrl = imageUrl;
     }
 }
