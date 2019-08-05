@@ -75,13 +75,15 @@
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/text_margin_standard"
         android:layout_marginStart="@dimen/text_margin_standard"
         android:layout_marginTop="@dimen/text_margin_standard"
+        android:layout_marginEnd="@dimen/text_margin_standard"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:color/transparent"
-        app:layout_constraintTop_toBottomOf="@+id/image_select_button"/>
+        app:layout_constraintTop_toBottomOf="@+id/image_select_button"
+        app:srcCompat="@android:color/transparent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

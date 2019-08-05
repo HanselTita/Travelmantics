@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/input_design"
+    android:backgroundTint="@android:color/white"
     android:layout_margin="2dp">
 
     <ImageView
